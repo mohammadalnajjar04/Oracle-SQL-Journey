@@ -13,6 +13,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 ## Course Progress
 
 * [x] 001 - Before You Start
+* [x] 002 - Course Overview
 
 ## Repository Structure
 
@@ -33,7 +34,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 1 / 115 videos
+Completed: 2 / 115 videos
 
 ## Author
 
