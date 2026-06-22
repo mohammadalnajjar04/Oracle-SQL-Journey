@@ -15,6 +15,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 001 - Before You Start
 * [x] 002 - Course Overview
 * [x] 003 - Introduction Part 1
+* [x] 004 - Introduction Part 2
 
 ## Repository Structure
 
@@ -35,7 +36,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 3 / 115 videos
+Completed: 4 / 115 videos
 
 ## Author
 
