@@ -20,6 +20,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 005 - Installing Oracle 12c on Windows
 * [x] 006 - First Connection and Unlock HR Account
 * [x] 007 - First Connection and Unlock HR Account Part 2
+* [x] 008 - Basic Select Part 1
 
 ## Repository Structure
 
@@ -40,7 +41,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 8 / 115 videos
+Completed: 9 / 115 videos
 
 ## Author
 
