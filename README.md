@@ -23,6 +23,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 008 - Basic Select Part 1
 * [x] 009 - Basic Select Part 2
 * [x] 010 - Restricting and Sorting Part 1
+* [x] 011 - Restricting and Sorting Part 2
 
 ## Repository Structure
 
@@ -43,7 +44,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 11 / 115 videos
+Completed: 12 / 115 videos
 
 ## Author
 
