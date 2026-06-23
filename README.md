@@ -22,6 +22,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 007 - First Connection and Unlock HR Account Part 2
 * [x] 008 - Basic Select Part 1
 * [x] 009 - Basic Select Part 2
+* [x] 010 - Restricting and Sorting Part 1
 
 ## Repository Structure
 
@@ -42,7 +43,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 10 / 115 videos
+Completed: 11 / 115 videos
 
 ## Author
 
