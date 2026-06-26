@@ -28,6 +28,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 013 - Restricting and Sorting Part 4
 * [x] 014 - Substitution Variables Part 1
 * [x] 015 - Substitution Variables Part 2
+* [x] 016 - Character Functions
 
 ## Repository Structure
 
@@ -48,7 +49,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 16 / 115 videos
+Completed: 17 / 115 videos
 
 ## Author
 
