@@ -29,6 +29,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 014 - Substitution Variables Part 1
 * [x] 015 - Substitution Variables Part 2
 * [x] 016 - Character Functions
+* [x] 017 - Number Functions
 
 ## Repository Structure
 
@@ -49,7 +50,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 17 / 115 videos
+Completed: 18 / 115 videos
 
 ## Author
 
