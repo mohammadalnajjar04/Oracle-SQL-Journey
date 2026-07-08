@@ -31,6 +31,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 016 - Character Functions
 * [x] 017 - Number Functions
 * [x] 018 - Date Functions
+* [x] 019 - Using Conversion Functions Part 1
 
 ## Repository Structure
 
@@ -51,7 +52,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 19 / 115 videos
+Completed: 20 / 115 videos
 
 ## Author
 
