@@ -1,84 +1,98 @@
-# 023-Using-Conversion-Functions-Part - (Conditional Expressions)
+-- Ex5: case statment
 
-## Topics Covered
+SELECT first_name,
+       job_id,
+       salary,
+       CASE job_id
+           WHEN 'IT_PROG' THEN salary * 1.10
+           WHEN 'ST_CLERK' THEN salary * 1.15
+           WHEN 'SA_REP' THEN salary * 1.20
+           ELSE salary
+       END AS revised_salary
+FROM employees;
 
-- CASE Expression
-- DECODE Function
-- Conditional logic in SQL
-- IF-THEN-ELSE behavior
+-- you can make the condition after when 
 
----
+SELECT first_name,
+       job_id,
+       salary,
+       CASE
+           WHEN job_id = 'IT_PROG' THEN 1.10 * salary
+           WHEN job_id = 'ST_CLERK' THEN 1.15 * salary
+           WHEN job_id = 'SA_REP' THEN 1.20 * salary
+           ELSE salary
+       END AS revised_salary
+FROM employees;
 
-## Conditional Expressions
+-- if you didnt put else then null will apper for not match conditions
 
-Conditional expressions allow SQL statements to perform IF-THEN-ELSE logic.
+SELECT first_name,
+       job_id,
+       salary,
+       CASE job_id
+           WHEN 'IT_PROG' THEN 1.10 * salary
+           WHEN 'ST_CLERK' THEN 1.15 * salary
+           WHEN 'SA_REP' THEN 1.20 * salary
+       END AS revised_salary
+FROM employees;
 
-Oracle provides two approaches:
+-- this below statment is not logicaly coorect
+-- if the first condition is met then it show the result regardless another conditions
 
-- CASE Expression (ANSI SQL Standard)
-- DECODE Function (Oracle-specific)
+SELECT salary,
+       CASE
+           WHEN salary > 3000 THEN 'salary > 3000'
+           WHEN salary > 4000 THEN 'salary > 4000'
+           WHEN salary > 10000 THEN 'salary > 10000'
+       END AS FFF
+FROM employees;
 
----
+-- so it should be like this
 
-## CASE Expression
+SELECT salary,
+       CASE
+           WHEN salary > 10000 THEN 'salary > 10000'
+           WHEN salary > 4000 THEN 'salary > 4000'
+           WHEN salary > 3000 THEN 'salary > 3000'
+       END AS FFF
+FROM employees;
 
-Evaluates conditions and returns a corresponding result.
+-- Ex6: decode
 
-### Simple CASE
+SELECT last_name,
+       job_id,
+       salary,
+       DECODE(job_id,
+              'IT_PROG', 1.10 * salary,
+              'ST_CLERK', 1.15 * salary,
+              'SA_REP', 1.20 * salary,
+              salary) AS revised_salary
+FROM employees;
 
-```sql
-CASE expression
-    WHEN value1 THEN result1
-    WHEN value2 THEN result2
-    ELSE default_result
-END
-```
+-- if you didnt put default value for non-match condition them null will be return for theses value\
 
-### Searched CASE
+SELECT last_name,
+       job_id,
+       salary,
+       DECODE(job_id,
+              'IT_PROG', 1.10 * salary,
+              'ST_CLERK', 1.15 * salary,
+              'SA_REP', 1.20 * salary
+       ) AS revised_salary
+FROM employees;
 
-```sql
-CASE
-    WHEN condition1 THEN result1
-    WHEN condition2 THEN result2
-    ELSE default_result
-END
-```
+-- Example: Display tax for employees as follows:
+-- If the salary is less than 3000, then tax = 0%
+-- If the salary is between 3000 and 7000, then tax = 10%
+-- If the salary is greater than 7000, then tax = 20%
+-- In this case, you should use CASE instead of DECODE because CASE is more flexible.
 
----
-
-## DECODE Function
-
-Oracle-specific alternative to CASE.
-
-```sql
-DECODE(expression,
-       search1, result1,
-       search2, result2,
-       default_result)
-```
-
----
-
-## CASE vs DECODE
-
-| CASE | DECODE |
-|------|--------|
-| ANSI SQL Standard | Oracle-specific |
-| Supports complex conditions | Supports equality only |
-| More flexible | Simpler syntax |
-
----
-
-## Best Practice
-
-- Use **CASE** for new SQL code.
-- Use **DECODE** mainly when maintaining legacy Oracle applications.
-
----
-
-## Key Takeaways
-
-- CASE provides IF-THEN-ELSE logic in SQL.
-- CASE is more powerful and flexible than DECODE.
-- DECODE only compares equality.
-- CASE is recommended for most modern Oracle SQL queries.
+SELECT employee_id,
+       first_name,
+       salary,
+       CASE
+           WHEN salary < 3000 THEN '0%'
+           WHEN salary BETWEEN 3000 AND 7000 THEN '10%'
+           WHEN salary > 7000 THEN '20%'
+       END AS tax
+FROM employees;
