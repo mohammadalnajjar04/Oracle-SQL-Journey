@@ -33,6 +33,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 018 - Date Functions
 * [x] 019 - Using Conversion Functions Part 1
 * [x] 020 - Using Conversion Functions Part 2
+* [x] 021 - Using Conversion Functions Part 3
 
 ## Repository Structure
 
@@ -53,7 +54,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 21 / 115 videos
+Completed: 22 / 115 videos
 
 ## Author
 
