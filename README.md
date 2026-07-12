@@ -38,6 +38,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 023 - Using Conversion Functions Part 5
 * [x] 024 - Using the Group Functions 1
 * [x] 025 - Using the Group Functions 2
+* [x] 026 - Joins and Cartesian Products
 
 ## Repository Structure
 
@@ -58,7 +59,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 26 / 115 videos
+Completed: 27 / 115 videos
 
 ## Author
 
