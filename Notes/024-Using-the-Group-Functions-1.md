@@ -1,4 +1,4 @@
-# 024-Using-the-Group-Functions - (Group Functions)
+# 024-Using-the-Group-Functions-1 - (Group Functions)
 
 ## Topics Covered
 
