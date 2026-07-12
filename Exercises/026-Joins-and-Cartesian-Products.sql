@@ -1,0 +1,18 @@
+--lets execute this query that show EMPLOYEE_ID , first_name, DEPARTMENT_ID from table employee
+--note that DEPARTMENT_ID fk to table DEPARTMENTS
+SELECT EMPLOYEE_ID , first_name, DEPARTMENT_ID
+FROM EMPLOYEES;
+
+--and this query show DEPARTMENT_ID, DEPARTMENT_NAME form DEPARTMENTS
+SELECT DEPARTMENT_ID, DEPARTMENT_NAME
+FROM DEPARTMENTS;
+
+--if you try to display data from multiple tables without join, this called cartesian product
+SELECT
+EMPLOYEES.EMPLOYEE_ID ,
+EMPLOYEES.FIRST_NAME,
+DEPARTMENTS.DEPARTMENT_ID,
+DEPARTMENTS.DEPARTMENT_NAME
+FROM EMPLOYEES,
+DEPARTMENTS;
+
