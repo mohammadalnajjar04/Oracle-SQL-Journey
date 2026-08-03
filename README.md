@@ -40,6 +40,7 @@ A complete learning journey in Oracle SQL and PL/SQL following Khaled Alkhudari'
 * [x] 025 - Using the Group Functions 2
 * [x] 026 - Joins and Cartesian Products
 * [x] 027 - Types of Joins
+* [x] 028 - Equijoin
 
 ## Repository Structure
 
@@ -60,7 +61,7 @@ Oracle-SQL-Journey
 
 ## Current Status
 
-Completed: 28 / 115 videos
+Completed: 29 / 115 videos
 
 ## Author
 
